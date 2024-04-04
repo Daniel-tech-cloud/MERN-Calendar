@@ -1,0 +1,9 @@
+.fab {
+    position: fixed; /* Permite que el botón permanezca fijo en la pantalla */
+    bottom: 25px; /* Distancia desde la parte inferior */
+    right: 25px; /* Distancia desde el lado derecho */
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+}

@@ -1,9 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { addHours } from 'date-fns';
+
+const tempEvent = {
+    title: 'Cumpleaños jefe',
+    notes: 'Hay que comrpar pastel',
+    start: new Date(),
+    end: addHours(new Date(), 2),
+    bgColor: '#fafafa',
+    user:{
+      id: '123',
+      name: 'Daniel'
+    }
+};
 
 export const calendarSlice = createSlice({
     name: 'calendar',
     initialState: {
-        counter: 10
+        events: [
+            tempEvent
+        ],
+        activeEvent: null 
     },
     reducers: {
         increment: (state, /* action */ ) => {
